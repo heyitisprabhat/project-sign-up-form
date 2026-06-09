@@ -108,7 +108,7 @@ h6 {
 .image-sidebar {
   width: 25vw;
   height: 100vh;
-  background-image: url("/ocean-horizon.jpg");
+  background-image: url("ocean-horizon.jpg");
   background-size: cover;
   background-position: bottom center;
   background-repeat: no-repeat;
