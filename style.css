@@ -88,7 +88,8 @@ h3,
 h4,
 h5,
 h6 {
-  text-wrap: balance;
+  /* text-wrap: balance; */
+  letter-spacing: -0.5px;
 }
 
 /*
@@ -99,95 +100,93 @@ h6 {
   isolation: isolate;
 }
 
-.main-form {
-  max-width: 70vw;
-  margin-inline: auto;
-  display: flex;
+h2 {
+  font-size: 1.2rem;
 }
 
-.image-sidebar {
-  width: 25vw;
+
+label {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.6rem;
+}
+
+.main-div {
+  display: flex;
   height: 100vh;
+  aspect-ratio: 7/5;
+  margin-inline: auto;
+}
+
+.left-section {
+  position: relative;
+  flex: 2;
   background-image: url("ocean-horizon.jpg");
   background-size: cover;
   background-position: bottom center;
   background-repeat: no-repeat;
 }
 
-.form-content {
-  width: 60vh;
+.left-section h1 {
+  font-size: 4rem;
+  color: white;
+  background-color: #9fc5b150;
+  width: 100%;
+  margin-top: 8rem;
+  padding: 16px;
+  text-align: center;
+}
+
+.left-section p {
+  position: absolute;
+  bottom: 4rem;
+  width: 100%;
+  text-align: center;
+}
+
+a {
+  color: black;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.right-section {
+  flex: 3;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-input {
-  width: 200px;
-  height: 24px;
-  border: 1px solid #d3d3d3;
-  border-radius: 4px;
-  padding-left: 8px;
-  font-size: 0.8rem;
+.right-section > *{
+  padding: 2rem;
 }
 
-label {
-  display: block;
-  text-transform: uppercase;
-  font-weight: 600;
+.heading > h2 {
+  max-width: 50ch;
+  margin-bottom: 1rem;
 }
 
-form {
-  width: fit-content;
-  padding: 36px;
-  font-size: clamp(0.15rem, 1.5vw, 0.6rem);
-  letter-spacing: 1px;
+.form {
   box-shadow:
     0 8px 10px -8px rgba(0, 0, 0, 0.25),
     0 -8px 10px -8px rgba(0, 0, 0, 0.05);
 }
 
-form section {
+form > section {
+  margin-top: 0.5rem;
   display: flex;
-  gap: 48px;
-  padding-bottom: 16px;
+  gap: 36px;
 }
 
-h2 {
-  width: 50ch;
-  font-size: clamp(0.25rem, 2.5vw, 1.2rem);
-  margin-bottom: 16px;
-  letter-spacing: -0.5px;
-}
-
-button {
-  font-family: "DM Sans", sans-serif;
-  font-size: 0.9rem;
-  font-weight: 600;
-  padding: 12px 48px;
-  margin-bottom: 16px;
-  border-radius: 8px;
-  border: none;
-  color: white;
-  background-color: #9fc5b1;
-  box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-}
-
-.submit {
-  padding: 36px;
-}
-
-.submit p {
-  font-size: 0.9rem;
-}
-
-p em {
-  font-weight: 600;
-  font-style: normal;
-  color: #9fc5b1;
-}
-
-.heading {
-  padding-left: 36px;
+input {
+  display: block;
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+  padding-left: 8px;
+  font-size: 0.8rem;
+  width: 12rem;
 }
 
 input:user-invalid {
@@ -204,33 +203,20 @@ input:focus {
   box-shadow: 0 6px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
-.banner {
-  color:white;
-  background-color:#9fc5b150;
-  height: 100px;
-  width: 100%;
-  margin-top: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+button {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  padding: 0.6rem 2.4rem;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: none;
+  color: white;
+  background-color: #9fc5b1;
+  box-shadow: 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
-
-.banner h1{
-    font-size: 4rem;
-}
-
-.image-sidebar p{
-    color: black;
-    font-size: 0.8rem;
-    text-align: center;
-    margin-top: 400px;
-}
-
-a{
-    color: black;
-}
-
-a:active{
-    text-decoration: none;
+.submit em {
+  font-weight: 600;
+  font-style: normal;
+  color: #9fc5b1;
 }
